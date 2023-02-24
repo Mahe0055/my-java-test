@@ -11,8 +11,8 @@ public class Team {
      * Adds a teammember to the instance field members
      */
     public void addTeamMember(TeamMember m) {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        Team member1 = new ArrayList<>();
+        members = new ArrayList<>();
     }
     
     // Nothing to do here!

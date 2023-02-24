@@ -1,8 +1,6 @@
 package assignment4;
 
-public class Student
-{
-
+public class Student {
     private int studentId;
     private String name;
     private int grade;

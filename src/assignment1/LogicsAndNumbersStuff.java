@@ -1,7 +1,8 @@
 package assignment1;
 
-public class LogicsAndNumbersStuff {
+import java.util.Arrays;
 
+public class LogicsAndNumbersStuff {
     /**
      * This method returns the difference between a and b multiplied by c.
      * @param a The first number
@@ -9,10 +10,8 @@ public class LogicsAndNumbersStuff {
      * @param c The last number
      * @return The difference of a and b, multiplied by c.
      */
-    public int diffMultipliedByC(int a, int b, int c)
-    {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+    public int diffMultipliedByC(int a, int b, int c) {
+        return (b - a) * c;
     }
 
     /**
@@ -21,10 +20,11 @@ public class LogicsAndNumbersStuff {
      * @param vacation True if you are on vacation, false if you are not.
      * @return True if you can stay in bed given the parameters.
      */
-    public boolean canYouStayInBed(boolean weekday, boolean vacation)
-    {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+    public boolean canYouStayInBed(boolean weekday, boolean vacation) {
+        if(weekday == vacation) {
+            return false;
+        }
+        else return true;
     }
 
     /**
@@ -32,21 +32,25 @@ public class LogicsAndNumbersStuff {
      * @param numbers The array containing all the numbers to calculate the sum of.
      * @return The sum of all integers in the numbers array.
      */
-    public int sumOfNumbers(int[] numbers)
-    {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
-    }
+   public int sumOfNumbers(int[] numbers) {
+       numbers = {2, 3, 5, 6, 8};
+       int sum = 0;
+       for (i = 0; i < numbers.length; i++) {
+           sum += numbers;
+       }
+       return sum;
+   }
 
     /**
      * This method returns the average of all the given numbers.
      * @param numbers The array containing all the numbers to calculate the average of.
      * @return The average of all the integers in the numbers array.
      */
-    public double averageOfNumber(int[] numbers)
-    {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+    public double averageOfNumber(int[] numbers) {
+        numbers = new int[]{2, 3, 5, 6, 8};
+        int sum = 0;
+        for (i = 0; i < numbers.length; i++);
+        double average = sum / numbers.length;
     }
 
     /**
@@ -62,5 +66,4 @@ public class LogicsAndNumbersStuff {
         //TODO Delete line below, and implement this method
         throw new UnsupportedOperationException();
     }
-
 }

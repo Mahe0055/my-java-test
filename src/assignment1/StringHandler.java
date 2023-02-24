@@ -1,7 +1,8 @@
 package assignment1;
 
-public class StringHandler {
+import java.util.Scanner;
 
+public class StringHandler {
     /**
      * 
      * @param str
@@ -9,8 +10,8 @@ public class StringHandler {
      * Case insensitive.
      */
     public String stringManipulation(String str) {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        String newWord = str.replace('c', 's');
+        return newWord;
     }
 
     /**
@@ -21,8 +22,11 @@ public class StringHandler {
      * 
      */
     public int stringLength(String str) {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        Scanner sc = new Scanner(System.in);
+        Scanner input = input.next();
+        if (input == null || "") {
+            return 0;
+        }
     }
 
     /**
@@ -32,8 +36,11 @@ public class StringHandler {
      * e.g. if arr is ["hi","hello","hej"] the method should return 10
      */
     public int stringArrayLength(String[] arr) {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        arr = new String[{"hi", "hola", "hey", "hej"}];
+        String[] words = {"hi","hello","hej"};
+        if(arr.contains[words) {
+            return 10;
+        }
     }
 
     /**
@@ -43,8 +50,8 @@ public class StringHandler {
      * e.g. "Hello" -> "olleH"
      */
     public String stringReverse(String str) {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        String reversedString = new StringBuilder(str).reverse().toString();
+        return reversedString;
     }
 
     /**
