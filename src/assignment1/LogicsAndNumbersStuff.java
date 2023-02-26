@@ -22,9 +22,9 @@ public class LogicsAndNumbersStuff {
      */
     public boolean canYouStayInBed(boolean weekday, boolean vacation) {
         if(weekday == vacation) {
-            return false;
+            return true;
         }
-        else return true;
+        else return false;
     }
 
     /**
@@ -33,10 +33,9 @@ public class LogicsAndNumbersStuff {
      * @return The sum of all integers in the numbers array.
      */
    public int sumOfNumbers(int[] numbers) {
-       numbers = {2, 3, 5, 6, 8};
        int sum = 0;
-       for (i = 0; i < numbers.length; i++) {
-           sum += numbers;
+       for (int i = 0; i < numbers.length; i++) {
+           sum += numbers[i];
        }
        return sum;
    }
@@ -49,8 +48,11 @@ public class LogicsAndNumbersStuff {
     public double averageOfNumber(int[] numbers) {
         numbers = new int[]{2, 3, 5, 6, 8};
         int sum = 0;
-        for (i = 0; i < numbers.length; i++);
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
         double average = sum / numbers.length;
+        return average;
     }
 
     /**
